@@ -5,38 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--This will set the relativity of 
     the viewport to 1:1, it will be responsive-->
     <title>My Website</title><!--The title of the website-->
-    <style>
-        * {
-            font-family: 'Verdana'
-        }
-        body {
-            background-color: rgb(14, 124, 109);
-            color: #333;
-            text-align: center;
-            padding: 50px;}
-        h1 {
-            color: whitesmoke;
-        }
-        h2 {
-            color: rgb(162, 32, 82);
-            margin-top: 5px;
-        }
-        p {
-            color: whitesmoke;
-            line-height: 1.5;
-            font-weight: bold;
-            margin-top: 5px;
-            margin-bottom: 40px;
-        }
-        div {
-            background-color: whitesmoke;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body><!--This is where the content goes-->
-    <h1 class="myblog">Welcome to my blog</h1>
+    <button id="toggleThemeBtn" class="darkmode">Dark Mode</button>
+    <h1 class="myblog">Welcome to my journey in Web Design</h1>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#journey">My Journey</a></li>
+        <li><a href="#project">My Project</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
     <div><h2>My name is Carla Miranda<br>and this is my first Tools and Workflow lab</h2></div>
-    <img src="mine.jpg" width="500">
+    <img src="IMG_0711.jpg" width="500">
     <p>I am 22 years old.<br>I am studying "Web Design and Development" at Humber College.</p>
     
     <div><h2>Humber IGS Campus location</h2></div>
@@ -45,5 +27,11 @@
 
     <div><h2>There are 5 more courses such as:</h2></div>
     <p>Web Design and Development<br>User Experience Design<br>Digital Imaging and Illustration<br>Programming 1<br>Tools and Workflow</p>
+    <script>
+        const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+        toggleThemeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
 </body>
 </html>
