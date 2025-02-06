@@ -1,0 +1,67 @@
+* {
+  font-family: 'Verdana'
+}
+body {
+    background-color: var(--primary-page-bg);
+    color: var(--primary-text-color);
+    text-align: center;
+
+    --primary-page-bg: rgb(14, 124, 109);
+    --primary-text-color: whitesmoke;
+}
+body.dark {
+  --primary-page-bg: rgb(26, 25, 25);
+  --primary-text-color: whitesmoke;
+}
+.darkmode {
+  color: black;
+  font-weight: bold;
+}
+button {
+  float: right;
+  background-color: mediumaquamarine;
+  padding: 5px;
+  cursor: pointer;
+}
+h1 {
+  color: whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h2 {
+  color: rgb(162, 32, 82);
+  margin-top: 5px;
+}
+p {
+  color: whitesmoke;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+div {
+  margin-top: 20px;
+  background-color: whitesmoke;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(162, 32, 82);
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 200px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: mediumaquamarine;
+}
